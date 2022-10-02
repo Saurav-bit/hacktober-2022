@@ -2,9 +2,9 @@ const canvas=document.querySelector("#canvas");
 const ctx=canvas.getContext('2d');
 canvas.width=window.innerWidth;
 canvas.height=window.innerHeight;
-ctx.strokeStyle="#BADA55"; //color
-ctx.lineJoin='round'; //end of line
-ctx.lineCap='round'; //
+ctx.strokeStyle="#BADA55"; 
+ctx.lineJoin='round'; 
+ctx.lineCap='round'; 
 
 ctx.lineWidth=25;
 let isdraw=false; //when we are drawing
@@ -17,8 +17,6 @@ let hue=0;
 
 function draw(e)
 {
-    //called whenever we draw
-    console.log(e);
     if(!isdraw)
     {//stop the funtion when we are not drawing
         return; 
